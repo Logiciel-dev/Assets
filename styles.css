@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #7C57FB, #4A90E2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.shadowed-logo {
+    width: 700px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+} 
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.time {
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, #ff7f50, #ff1493);
+    border-radius: 5px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Agregamos un fondo neumorfista */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #7C57FB, #4A90E2); /* Cambiamos el fondo para un mejor contraste con el neumorfismo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255,1);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px #1f5da5, -20px -20px 50px #5a36d0;
+}
+
+.shadowed-logo {
+    width:400px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* Neumorfismo para la barra de progreso */
+.progress-bar {
+    width: 80%;
+    height: 15px;
+    background-color: rgba(224, 229, 236,0.5); /* Fondo para el neumorfismo */
+    border-radius: 30px;
+    box-shadow: inset 6px 6px 10px rgba(186, 190, 204,0.5), inset -6px -6px 10px rgba(255, 255, 255,0.5);
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* Barra de carga con un ligero brillo */
+.progress {
+    height: 100%;
+    background: linear-gradient(135deg, #7C57FB, #4A90E2);
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5);
+    transition: width 0.4s ease;
+}
+
+
+/* Imagen de borde a borde */
+.image-full-width {
+    margin: 0 -50px;
+    height: 169px; /* Esto extiende el contenedor de la imagen más allá del padding */
+}
+
+.image-full-width img {
+    position: fixed;
+    width: 754px;
+    height: auto;
+    display: block;
+    z-index: 99;
+    margin-top: -118px;
+}
+
+/* Estilos específicos para esta página */
+
+/* Contenedor que ocupa todo el alto de la pantalla */
+.container-vh {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: transparent;
+    margin:30px;
+    color: #333;
+    width: calc( 100% - 10px);
+}
+
+/* Card del título */
+.header-card {
+    background-color: rgba(0, 0, 0, 0.3); /* Color del card */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin:20px 0px; 
+    color:white;
+}
+
+.header-card h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+/* Contenido principal */
+.main-content {
+    display: flex;
+    flex: 1; /* Toma todo el espacio restante */
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 250px; /* Ancho fijo para la barra lateral */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.sidebar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la lista de documentos */
+.document-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.document-list li {
+    margin: 0px 0;
+}
+
+.document-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent; /* Gris uniforme */
+    transition: background-color 0.3s, color 0.3s;
+    border-bottom: solid rgba(0, 0, 0, 0.3) 1px;
+}
+
+.document-list a:hover {
+    background-color: #b0b0b0; /* Gris más oscuro al pasar el ratón */
+}
+
+/* Estilos para el área de contenido */
+.content {
+    flex: 1; /* Toma todo el espacio restante */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Fondo del card */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Habilita el scroll vertical */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    min-width: 300px; /* Ancho mínimo para mantener el espacio */
+    max-width: calc(100% - 60px); /* Asegura que no sobrepase el contenedor */
+}
+
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#content-area {
+    font-size: 1.2rem; /* Texto más grande para el contenido */
+    line-height: 1.5; /* Mejora la legibilidad */
+    color: #333;
+    max-height: 70vh; /* Limita la altura del área de contenido */
+}
